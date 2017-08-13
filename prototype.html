@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+	function Tutor (nombre, apellido){
+this.nombre = nombre;
+this.saludar = function(){
+	console.log("hola")
+}
+
+if(typeof apellido !== "undefined"){
+
+this.nombre_completo = nombre + " " + apellido; 
+	}
+}
+Tutor.protype.edad = 22; // se lo agrega a todos;
+var adrian = new Tutor("Adrian", "Iglesias");
+//adrian.edad = 26;
+
+adrian.iniciar_tutorial = function{
+	console.log("");
+}
+//console.log(adrian._proto_.proto_);//el prototipo padre es object
+	</script>
+</body>
+</html>

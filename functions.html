@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	function Tutor (nombre, apellido){
+this.nombre = nombre;
+this.saludar = function(){
+	console.log("hola")
+}
+
+if(typeof apellido !== "undefined"){
+
+this.nombre_completo = nombre + " " + apellido; 
+	}
+}
+
+var adrian = new Tutor("adrian", "iglesias");
+adrian.saludar();
+
+var ruben = new Tutor();
+ruben.saludar();
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<button id = "btn"> click </button>
+<script>
+(function (){
+document.getElementById('btn').addEventListener("click", function(){
+console.log("hizo click");
+});
+
+setTimeout(function(){
+console.log(hola_mundo("codigo Facilito"));
+},2000;
+})();
+
+function hola_mundo(nombre){
+function construct(){
+	nombre = "adrian";
+	return "hola " + nombre;
+}
+construct();
+}
